@@ -1,0 +1,25 @@
+
+
+start =
+    expression
+
+expression =
+    a:atom [ \n\t]*
+    { return a;}
+    / open:"(" expr:expression other:expression*")"comment*
+    {var start =  expr.split(''); var rest =  other;
+     return start.concat(other);}
+ 
+
+atom =
+    chars:validchar+
+        {return chars.filter(function(char){return char !=" ";}).join('');}
+    /comment
+
+comment = 
+         ";;" validchar* [\n\t]* e:expression*
+          {return e;}
+
+validchar
+    = 
+    [ 0-9a-zA-Z_?!+\-=@#$%^&*/.]

@@ -1,0 +1,91 @@
+.title {
+  text-align: center;
+}
+
+.navcontainer ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.navcontainer ul li { display: inline; }
+
+.navcontainer ul li a {
+  text-decoration: none;
+  padding: .2em 1em;
+  color: #fff;
+  background-color: #036;
+}
+
+.navcontainer ul li a:hover {
+  color: #fff;
+  background-color: #369;
+}
+
+body {
+  background-color: #778899;
+}
+
+.examples {
+  position: relative;
+  left:1000px;
+  top: 150px;
+}
+
+.examples li {
+  list-style-type: none;
+  margin: 20px 0 0 0;
+}
+
+.examples button {
+  height:30px;
+  width: 60px;
+}
+
+.examples button:hover {
+  color: #fff;
+  background-color: #369;
+}
+
+#input {
+  font-size: 18px;
+  font-family: sans-serif, helvetica;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 700px;
+  height: 200px;
+  background: #eee;
+  margin-bottom: 50px;
+
+}
+
+#submit {
+  position: absolute;
+  left: 1000px;
+  top: 600px;
+}
+
+#submit:hover {
+  color: #fff;
+  background-color: #369;
+}
+
+#console {
+  width: 700px;
+  height: 100px;
+  border: solid 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+
+}
+
+#turtlecanvas {
+  width: 700px;
+  height:500px;
+  background-color: #eee;
+  margin-left: auto;
+  margin-right: auto;
+}
